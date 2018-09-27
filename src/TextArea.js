@@ -4,8 +4,8 @@ class TextArea extends Component {
   render() {
     return(
       <div className="form-group">
-        <label htmlFor="{this.props.name}">{this.props.name}</label>
         <textarea
+          placeholder = {this.props.placeholder}
           name = {this.props.name}
           id = {this.props.id}
           required = {this.props.required}

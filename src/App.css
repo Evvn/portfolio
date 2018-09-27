@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 200%;
+  color: white;
+  background-color: #11155d;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-page-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.home_link {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.work_link {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.about_link {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.contact_link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+a {
+  border-bottom: 3px solid white;
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+.page {
+  height: 80vh;
+  max-width: 85vw;
+  overflow: auto;
+}
+
+input, textarea {
+  border: none;
+  font-size: 75%;
+  font-family: inherit;
+  width: 400px;
+  margin: 10px auto;
+  text-align: center;
+  background-color: #796ea6;
+  border: 2px solid white;
+  color: white;
+  font-weight: bold;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #e6e3ff;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: inherit;
+  color: white;
+  border: none;
+  transition: .2s;
+  border: 2px solid white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid white;
+}
+
+a:focus, input:focus, textarea:focus, button:focus {
+  outline: none;
+}
+
+.name {
+  /* font-size: 775%; */
+  font-size: 35vmin;
+  margin: 0;
+  margin-top: 50px;
+  /* line-height: 210px; */
+  line-height: 30vmin;
+}
+
+.lname {
+  color: rgba(0,0,0,0);
+  -webkit-text-stroke: 2px white;
+}
+
+.work {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 1px 1px;
+  grid-template-areas: "proj_desc proj_img";
+  margin-bottom: 150px;
+}
+
+.proj_desc {
+  grid-area: proj_desc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.proj_img {
+  grid-area: proj_img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  max-width: 500px;
+}
+
+.img_a {
+  border-bottom: 3px solid transparent;
+}

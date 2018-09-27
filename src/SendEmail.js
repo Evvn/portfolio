@@ -115,6 +115,7 @@ class SendEmail extends React.Component{
           <Input
             type = 'text'
             name = 'name'
+            placeholder = "Who you are"
             className = 'form-control'
             required = 'required'
             onChange = {this.handleInputChange.bind(this)}
@@ -125,6 +126,7 @@ class SendEmail extends React.Component{
           <Input
             type = 'email'
             name = 'email'
+            placeholder = 'What your email is'
             className = 'form-control'
             required = 'required'
             onChange = {this.handleInputChange.bind(this)}
@@ -135,6 +137,7 @@ class SendEmail extends React.Component{
           <Input
             type = 'text'
             name = 'subject'
+            placeholder = 'What the subject is'
             className = 'form-control'
             required = 'required'
             onChange = {this.handleInputChange.bind(this)}
@@ -143,11 +146,12 @@ class SendEmail extends React.Component{
           />
 
           <TextArea
+            placeholder = '> You inviting me for a coffee'
             name = 'message'
             id = 'message'
             required = 'required'
             className = 'form-control'
-            rows = '8'
+            rows = '6'
             onChange = {this.handleInputChange.bind(this)}
             value = {this.state.message}
             error = {this.state.errors.message}

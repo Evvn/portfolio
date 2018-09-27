@@ -4,10 +4,10 @@ class Input extends Component {
   render() {
     return (
       <div className="form-group">
-        <label htmlFor="{this.props.name}">{this.props.name}</label>
         <input
           type = {this.props.type}
           name = {this.props.name}
+          placeholder = {this.props.placeholder}
           className = {this.props.className}
           required = {this.props.required}
           onChange = {this.props.onChange}
