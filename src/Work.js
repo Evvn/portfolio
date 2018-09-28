@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AnimatedWrapper from "./AnimatedWrapper"
+// import AnimatedWrapper from "./AnimatedWrapper"
 
 // class WorkComponent extends Component {
 //   render() {
@@ -75,6 +75,16 @@ class Work extends Component {
           </div>
           <div className="proj_img">
             <a className="img_a" href="http://dutch-uncle.herokuapp.com/"><img src="/ikigai.png" alt=""/></a>
+          </div>
+        </div>
+
+        <div className="work">
+          <div className="proj_desc">
+            <h3>X and O.</h3>
+            <p>A simple game of noughts and crosses made with <b>CSS animations</b>.</p>
+          </div>
+          <div className="proj_img">
+            <a className="img_a" href="http://evvn.github.io/x_and_o/"><img src="/xando.png" alt=""/></a>
           </div>
         </div>
 

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import SendEmail from './SendEmail'
-import AnimatedWrapper from "./AnimatedWrapper"
+// import AnimatedWrapper from "./AnimatedWrapper"
 
 // class ContactComponent extends Component {
 //   render() {

@@ -1,16 +1,43 @@
 * {
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   font-family: 'Helvetica', sans-serif;
   font-size: 200%;
   color: white;
-  background-color: #11155d;
+  /* background-color: #11155d; */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: linear-gradient(270deg, #07a9ee, #040b91);
+  background-size: 400% 400%;
+
+  -webkit-animation: bruised 15s ease infinite;
+  -moz-animation: bruised 15s ease infinite;
+  animation: bruised 15s ease infinite;
+}
+
+@-webkit-keyframes bruised {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@-moz-keyframes bruised {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes bruised {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
 
 .animated-page-wrapper {
@@ -73,36 +100,47 @@ input, textarea {
   font-family: inherit;
   width: 400px;
   margin: 10px auto;
-  text-align: center;
-  background-color: #796ea6;
-  border: 2px solid white;
+  text-align: left;
+  background-color: transparent;
+  border-bottom: 3px solid white;
   color: white;
   font-weight: bold;
 }
 
 input::placeholder, textarea::placeholder {
-  color: #e6e3ff;
+  color: #fff;
+}
+
+textarea {
+  resize: none;
 }
 
 button {
   font-family: inherit;
-  font-size: inherit;
+  font-size: 75%;
   font-weight: bold;
   background-color: inherit;
   color: white;
   border: none;
   transition: .2s;
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
-button:hover {
+button:hover, button:focus {
+  outline: none;
   background-color: white;
   color: black;
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
-a:focus, input:focus, textarea:focus, button:focus {
+a:focus, input:focus, textarea:focus {
   outline: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
 
 .name {
@@ -152,4 +190,8 @@ img {
 
 .img_a {
   border-bottom: 3px solid transparent;
+}
+
+.hidden {
+  display: none;
 }

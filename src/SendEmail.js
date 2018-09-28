@@ -11,7 +11,7 @@ class SendEmail extends React.Component{
     this.state = {
       name: '',
       email: '',
-      subject: '',
+      subject: 'W O R K E M A I L',
       message: '',
       errors: {
         name: '',
@@ -138,10 +138,11 @@ class SendEmail extends React.Component{
             type = 'text'
             name = 'subject'
             placeholder = 'What the subject is'
-            className = 'form-control'
+            className = 'form-control hidden'
             required = 'required'
             onChange = {this.handleInputChange.bind(this)}
-            value = {this.state.subject}
+            // value = {this.state.subject}
+            value = 'W O R K E M A I L'
             error = {this.state.errors.subject}
           />
 
@@ -164,6 +165,8 @@ class SendEmail extends React.Component{
             className = 'btn btn-primary btn-lg'
             required = 'required'
           />
+
+          <p>Or, message me on <a href="https://www.linkedin.com/in/evanamezcua/"><i class="fab fa-linkedin"></i></a>.</p>
 
         </form>
 

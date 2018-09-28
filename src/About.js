@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AnimatedWrapper from "./AnimatedWrapper"
+// import AnimatedWrapper from "./AnimatedWrapper"
 
 // class AboutComponent extends Component {
 //   render() {

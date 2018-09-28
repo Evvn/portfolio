@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Link } from 'react-router-dom'
-import TransitionGroup from "react-transition-group/TransitionGroup"
+// import TransitionGroup from "react-transition-group/TransitionGroup"
 import './App.css'
 import Home from './Home'
 import Work from './Work'
@@ -13,6 +13,7 @@ import Contact from './Contact'
 // }
 
 class App extends Component {
+
   render() {
     return (
       <div className="App">
