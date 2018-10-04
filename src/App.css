@@ -4,6 +4,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  background-color: yellow;
+}
+
 body {
   font-family: 'Helvetica', sans-serif;
   font-size: 200%;
@@ -14,12 +18,12 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(270deg, #07a9ee, #040b91);
+  background: linear-gradient(270deg, #0391cd, #040b91);
   background-size: 400% 400%;
 
-  -webkit-animation: bruised 15s ease infinite;
-  -moz-animation: bruised 15s ease infinite;
-  animation: bruised 15s ease infinite;
+  -webkit-animation: bruised 16s ease infinite;
+  -moz-animation: bruised 16s ease infinite;
+  animation: bruised 16s ease infinite;
 }
 
 @-webkit-keyframes bruised {
@@ -94,6 +98,28 @@ a:hover {
   overflow: auto;
 }
 
+.about, .contact {
+  width: 85vw;
+}
+
+form {
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: rgba(0,0,0,0); /* or add it to the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: rgba(0,0,0,0);
+}
+
 input, textarea {
   border: none;
   font-size: 75%;
@@ -111,6 +137,23 @@ input::placeholder, textarea::placeholder {
   color: #fff;
 }
 
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  outline: none;
+  -webkit-text-fill-color: #fff;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
 textarea {
   resize: none;
 }
@@ -122,15 +165,17 @@ button {
   background-color: inherit;
   color: white;
   border: none;
-  transition: .2s;
-  border: 3px solid white;
+  border-bottom: 3px solid white;
 }
 
 button:hover, button:focus {
   outline: none;
-  background-color: white;
-  color: black;
-  border: 3px solid white;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23fff' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
 }
 
 a:focus, input:focus, textarea:focus {
@@ -143,9 +188,13 @@ a:focus, input:focus, textarea:focus {
   border-bottom: 3px solid transparent;
 }
 
+/* a:focus {
+  outline: none;
+} */
+
 .name {
   /* font-size: 775%; */
-  font-size: 35vmin;
+  font-size: 34vmin;
   margin: 0;
   margin-top: 50px;
   /* line-height: 210px; */
@@ -194,4 +243,22 @@ img {
 
 .hidden {
   display: none;
+}
+
+/* Animated route css */
+.route-wrapper {
+  position: relative;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.route-wrapper > div {
+  position: absolute;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

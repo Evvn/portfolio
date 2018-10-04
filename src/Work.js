@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Typing from 'react-typing-animation'
 // import AnimatedWrapper from "./AnimatedWrapper"
 
 // class WorkComponent extends Component {
@@ -46,7 +47,12 @@ class Work extends Component {
   render() {
     return (
       <div className="page">
-        <h2>Work.</h2>
+
+        <Typing
+          speed={150}
+        >
+          <h2>Work.</h2>
+        </Typing>
 
         <div className="work">
           <div className="proj_desc">

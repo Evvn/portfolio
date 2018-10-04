@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SendEmail from './SendEmail'
+import Typing from 'react-typing-animation'
 // import AnimatedWrapper from "./AnimatedWrapper"
 
 // class ContactComponent extends Component {
@@ -23,8 +24,13 @@ import SendEmail from './SendEmail'
 class Contact extends Component {
   render() {
     return (
-      <div className="page">
-        <h2>Send me something.</h2>
+      <div className="page contact">
+
+        <Typing
+          speed={150}
+          >
+          <h2>Send me something.</h2>
+        </Typing>
 
         <SendEmail
           id = "main-contact-form"

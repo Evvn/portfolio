@@ -152,7 +152,7 @@ class SendEmail extends React.Component{
             id = 'message'
             required = 'required'
             className = 'form-control'
-            rows = '6'
+            rows = '4'
             onChange = {this.handleInputChange.bind(this)}
             value = {this.state.message}
             error = {this.state.errors.message}
@@ -166,7 +166,7 @@ class SendEmail extends React.Component{
             required = 'required'
           />
 
-          <p>Or, message me on <a href="https://www.linkedin.com/in/evanamezcua/"><i class="fab fa-linkedin"></i></a>.</p>
+          <p>Or, message me on <a href="https://www.linkedin.com/in/evanamezcua/"><i class="fab fa-linkedin"></i></a></p>
 
         </form>
 
