@@ -70,7 +70,7 @@ class Work extends Component {
             <p>A portfolio website built with <b>React</b>. Contact form handled by <b>EmailJS</b>. Page transitions created with <b>React Router</b>.</p>
           </div>
           <div className="proj_img">
-            <a className="img_a" href="https://evvn.github.io/breakout/"><img src="/portfolio.png" alt=""/></a>
+            <a className="img_a" href="http://evvn.herokuapp.com/"><img src="/portfolio.png" alt=""/></a>
           </div>
         </div>
 
