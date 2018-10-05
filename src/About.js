@@ -28,14 +28,16 @@ class About extends Component {
         </Typing>
 
         <Typing
-          speed={35}
+          speed={25}
           >
 
           <Typing.Delay ms={1000} />
 
-          <p>I'm a front end developer living in Melbourne. I recently graduated from the Web Development Immersive course at General Assembly, but I've been coding for the past 6 years. I studied Design for Communication and Computer Science, and have experience in design, development, and programming. I love any opportunity to turn creative design work in to functional web applications.</p>
+          <p
+            style={{fontSize: '75%'}}
+            >Front end developer living in Melbourne. Recently graduated from the Web Development Immersive course at General Assembly. Coding for the past 6 years. Studied Computer Science and Design for Communication. Designed and built responsive full-stack web applications using common design standards. Used SQL databases to safely model and store data. Developed web applications using modern Ruby and JavaScript frameworks such as Rails and React. Integrated third-party APIs in multiple projects. Deployed functional applications to the web using cloud-based hosting. Worked in team environments using Agile project management methodology and collaborative version control using Git.<br/><br/>I Love any opportunity to turn creative design work in to functional web applications.</p>
 
-          <p>Say hell<span style={{fontSize: '80%'}}>☻</span></p>
+          <p><b>Say hello. :)</b></p>
         </Typing>
 
       </div>
